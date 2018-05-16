@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Ajout d'une commande</title>
+  </head>
+
+  <body>
+    <h1>Gestion des commandes</h1>
+
+    <h2>Création d'une commande</h2>
+    <a href="index.html">Retour a l'accueil</a>
+    <form action="script/ajouter_commande.php" method="POST">
+      <p><label for="numero">Numéro</label> : <input id="numero"/></p>
+      <p><label for="date_commande">Date</label> : <input type="date" id=date_commande/></p>
+      <p><label for="livreur">Livreur</label> :
+        <select id="livreur">
+          <option selected>Armand Lionel</option>
+          <option>Journee Marguerite</option>
+          <option>Spide Arthur</option>
+        </select></p>
+      <p><label for="client">Client</label> :
+        <select  id="client">
+          <option selected>Armani Sophie</option>
+          <option>Berurier Laurent</option>
+          <option>Denis Sylvain</option>
+          <option>Ferniot Michelle</option>
+          <option>Lopert Nikos</option>
+          <option>Millot Perrine</option>
+          <option>Restri Mélanie</option>
+          <option>Amisse François</option>
+          <option>Merbeau Nicolas</option>
+          <option>Chevalier Lionel</option>
+        </select></p>
+      <p><button type="submit">Ajouter</button></p>
+    </form>
+  </body>
+</html>

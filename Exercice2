@@ -1,0 +1,46 @@
+CLIENT(ID,NOM,PRENOM)
+POST http://pizzeria/clients
+GET http://pizzeria/clients
+GET http://pizzeria/clients/ID
+PUT http://pizzeria/clients/ID
+DELETE http://pizzeria/clients/ID
+
+PIZZA(ID,LIBELLE,REFERENCE,PRIX,URL_IMAGE)
+POST http://pizzeria/pizzas
+GET http://pizzeria/pizzas
+GET http://pizzeria/pizzas/ID
+PUT http://pizzeria/pizzas/ID
+DELETE http://pizzeria/pizzas/ID
+
+LIVREUR(ID,NOM,PRENOM)
+POST http://pizzeria/livreurs
+GET http://pizzeria/livreurs
+GET http://pizzeria/livreurs/ID
+PUT http://pizzeria/livreurs/ID
+DELETE http://pizzeria/livreurs/ID
+
+COMMANDE(ID,NUMERO_COMMANDE,DATE_COMMANDE,LIVREUR_ID,CLIENT_ID)
+POST http://pizzeria/commandes
+GET http://pizzeria/commandes
+GET http://pizzeria/commandes/ID
+GET http://pizzeria/commandes/ID/livreurs
+GET http://pizzeria/commandes/ID/clients
+PUT http://pizzeria/commandes/ID
+PUT http://pizzeria/commandes/ID/livreurs
+PUT http://pizzeria/commandes/ID/clients
+DELETE http://pizzeria/commandes/ID
+DELETE http://pizzeria/commandes/ID/livreurs
+DELETE http://pizzeria/commandes/ID/clients
+
+COMMANDE_PIZZA(COMMANDE_ID,PIZZA_ID)
+POST http://pizzeria/commande_pizzas
+GET http://pizzeria/commande_pizzas
+GET http://pizzeria/commande_pizzas/ID
+GET http://pizzeria/commande_pizzas/ID/commandes
+GET http://pizzeria/commande_pizzas/ID/pizzas
+PUT http://pizzeria/commande_pizzas/ID
+PUT http://pizzeria/commande_pizzas/ID/commandes
+PUT http://pizzeria/commande_pizzas/ID/pizzas
+DELETE http://pizzeria/commande_pizzas/ID
+DELETE http://pizzeria/commande_pizzas/ID/commandes
+DELETE http://pizzeria/commande_pizzas/ID/pizzas
